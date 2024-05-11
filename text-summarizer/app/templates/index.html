@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+{% block title %}Analyze{% endblock %}
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analyze</title>
+    <!-- Include Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS for font styling and centering -->
+    <style>
+        body {
+            font-family: Arial, sans-serif; /* Adjust font-family as per need */
+            font-size: 16px; /* Adjust font-size as per need */
+            line-height: 1.6; /* Adjust line-height as per need */
+        }
+        h2 {
+            font-size: 24px; /* Adjust font-size for headings */
+            font-weight: bold; /* Adjust font-weight for headings */
+            color: #333; /* Adjust color for headings */
+        }
+        p {
+            color: #666; /* Adjust color for paragraphs */
+        }
+        .center-content {
+            text-align: center; /* Center align content */
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-md-8 offset-md-2 center-content"> <!-- Center the content -->
+            <h1>Legal Document Summarizer</h1>
+            <p>This is a Deep-learning based model for a legal document summarizer using the BART model.</p>
+            <p>You can access the summarizer through the provided interface.</p>
+            <h2>Fine-Tuning BART for Legal Summarization</h2>
+            <p><strong>Model Used:</strong> Facebook's BART-large-cnn.</p>
+            <p><strong>Dataset Split:</strong> 70/15/15 (train/validation/test).</p>
+            <p><strong>Methodology:</strong> Optimal hyperparameters were determined using the training and validation sets, with final evaluation on the test set.</p>
+            <!-- Add more content here with appropriate styling -->
+        </div>
+    </div>
+</div>
+
+<!-- Include Bootstrap JS -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+{% endblock %}
